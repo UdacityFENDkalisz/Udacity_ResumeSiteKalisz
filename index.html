@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume Site Martha Kalisz</title>
+  <link id="logo" rel="icon" type="image/png" href="images/mskLogo.png">
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/experience_cards.css" rel="stylesheet">
+  <link href="css/projects.css" rel="stylesheet">
+  <link href="css/about_me.css" rel="stylesheet">
+  <link href="css/skills.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <body style="overflow-x: hidden;"></body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav id="navbar" class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <section id="section1" data-nav="Section1" class="section">
+        <h1>Welcome! I'm <span>Martha Kalisz</span>.</h1>
+        <h2>Home</h2>
+        <h3>Front-End Developer, Physical Therapist</h3>
+        <h4>Learn more</h4>
+        <h5>Grab a PDF of my Resume</h5>
+      </section>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section2" data-nav="Section 2" class="active-section section">
+      <div class="landing__container">
+        <h2>Professional Experience</h2>
+        <p>Add little bio about my journey. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum
+          metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue.
+          Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac
+          tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu
+          augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor
+          lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec
+          libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+
+        <div class="experience_card">
+          <div class="experience_photo">
+            <img src="images/experience_udacity.png" alt="Udacity Logo">
+          </div>
+          <div class="experience_content">
+            <h3>Front-End Nanodgree</h3>
+            <p>Udacity</p>
+            <p><i>November 2020 - Present</i></p>
+            <p class="experience_discr">Self guided study focusing on front-end software engineering fundamentals,
+              resulting in four custom projects.</p>
+          </div>
+        </div>
+
+        <div class="experience_card">
+          <div class="experience_photo">
+            <img src="images/experience_exeter.jpg" alt="Exeter Logo">
+          </div>
+          <div class="experience_content">
+            <h3>Pediatric Physical Therapist</h3>
+            <p>Exeter Hospital, Exeter NH</p>
+            <p><i>October 2019 - Present</i></p>
+            <p class="experience_discr">Treating patients from birth to 23 years old is a challenging position,
+              requiring patience and flexibility. Managed patients with diverse diagnoses including developmental
+              conditions, neuromuscular and musculoskeletal disorders, post-op, and infants, while working closely with
+              MDs and PAs in order to coordinate patient care. Gained the trust of young patients and their families,
+              requiring clear communication. Maintained communication during a wordlwide pandemic. Supervised PT
+              assistants. Navigated Meditech systems. </p>
+          </div>
+        </div>
+
+        <div class="experience_card">
+          <div class="experience_photo">
+            <img src="images/experience_elliot.jpg" alt="Elliot Logo">
+          </div>
+          <div class="experience_content">
+            <h3>Staff Physical Therapist</h3>
+            <p>Elliot Hospital, Londonderry, NH</p>
+            <p><i>November 2018 - December 2019</i></p>
+            <p class="experience_discr">Managed patients with diverse diagnoses including post-op, deconditioning, and a
+              variety of musculoskeletal disorders while working closely with MDs and PAs in order to coordinate patient
+              care. Supervised PT aides, students. Navigated Epic systems. </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3" class="section">
+      <div class="landing__container">
+        <h2>Skills</h2>
+        <p>I'm constantly learning new technologies in order to improve my current skillset. Here are the skills I am
+          currently most comfortable with:</p>
+        <div class="container">
+          <div class="skill">
+            <p>Communication</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Flexibility</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Motivation</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <p>HTML</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <p>CSS</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Microsoft Office</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="skill">
+            <p>Google Drive</p>
+            <div class="dots">
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot_fill"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section4" data-nav="Section 4" class="section">
+      <div class="landing__container">
+        <!--Add Photo of me (circle)-->
+        <div class="headshot">
+          <img src="images/headshot-2.jpg" alt="Martha Kalisz">
+        </div>
+        <h2>About Me</h2>
+        <p>Hey there, thanks for stopping by! At first glance, web development and physical therapy may seem like an
+          incongruent combination, but both require a passion for lifelong learning, systematic thinking, clear
+          communication, and designing detailed plans. I am a compassionate problem solver and driven professional. When
+          I am not working on developing my software engineering skills, you will likely find me hunting for sea glass
+          on one of the beaches of New Hampshire’s seacoast, relaxing with friends and a flight at a local brewery, or
+          challenging myself in the White Mountains on a hike. Find out more about my journey below!</p>
+        <div class="about__me__content">
+          <div class="about__me__img0"><img src="images/wisconsin.png" style="opacity:0%"></div>
+          <div class="about__me__text">
+            <h3>Where I'm From</h3>
+          </div>
+        </div>
+        <div class="about__me__content">
+          <div class="about__me__img chicago"><img src="images/chicago.jpeg" alt="Chicago"></div>
+          <div class="about__me__text">
+            <p>I grew up in a suburb of Chicago, IL with three siblings who have inspired and challenged me, nurturing a
+              highly motivated and self-driven individual. Discipline and teamwork were instilled in me at a young age
+              by both playing and watching sports – go Cubbies, Packers and Blackhawks! My respect for the arts and keen
+              interest in an ongoing pursuit of knowledge was solidified by trips to word class museums and attending
+              performances. The shores of Lake Michigan sparked my love for the beach, while my desire to travel was
+              cultivated by trying foods from around the world (plus lots of deep-dish pizza!).</p>
+          </div>
+        </div>
+        <div class="about__me__content">
+          <div class="about__me__img0"><img src="images/wisconsin.png" style="opacity:0%"></div>
+          <div class="about__me__text">
+            <h3>Where I've Been</h3>
+          </div>
+        </div>
+        <div class="about__me__content">
+          <div class="about__me__img"><img src="images/wisconsin.png" alt="UW logo"></div>
+          <div class="about__me__text">
+            <p>I completed my undergraduate degree earning a Bachelor's of Science in Kinesiology from the University of
+              Wisconsin at Madison in May of 2015. Club and activity involvement included being elected as Vice
+              President of the School of Education’s Kinesiology Club, participating in club ice hockey, and
+              volunteering with Badger Volunteers. I held two jobs throughout my college career as a research assistant
+              with a pediatric cardiopulmonary lab as a Campus Visit Specialist with Campus and Visitor Relations, which
+              involved managing multiple accounts and collaborating with Campus Partners to plan specialty visits and
+              tours for approximately 30,000 guests per year. Throughout my undergraduate career I stayed busy while
+              keeping up with my studies, demonstrating excellent time management, communication and prioritization of
+              tasks.</p>
+          </div>
+        </div>
+        <div class="about__me__content">
+          <div class="about__me__img"><img src="images/UNC.png" alt="UNC logo"></div>
+          <div class="about__me__text">
+            <p>I completed my graduate degree earning a Doctorate of Physical Therapy from the University of North
+              Carolina at Chapel Hill in August of 2018. Club and activity involvement included being elected as Vice
+              President for the Student Physical Therapy Association, and volunteering for student-run Student Health
+              Action Coalition. I held a job as an office coordinator while juggling coursework and clinical rotations.
+              Once again, time management and communication were integral to my success, and my critical thinking and
+              problem-solving skills were put to the test. After graduation, I moved to New Hampshire to begin my career
+              as a Physical Therapist.</p>
+          </div>
+        </div>
+        <div class="about__me__content">
+          <div class="about__me__img"><img src="images/spain.jpeg" alt="Barcelona"></div>
+          <div class="about__me__text">
+            <p>My love for travel was realized and solidified with the opportunity to study abroad in Spain during my
+              undergraduate studies. Through that experience, I was able to become a conversational Spanish speaker. In
+              addition, I traveled within Europe with friends as well as independently, building my confidence,
+              self-determination, and autonomy.</p>
+          </div>
+        </div>
+        <div class="about__me__content">
+          <div class="about__me__img0"><img src="images/wisconsin.png" style="opacity:0%"></div>
+          <div class="about__me__text">
+            <h3>Where I'm Going</h3>
+          </div>
+        </div>
+        <div class="about__me__content">
+          <div class="about__me__img"><img src="images/portsmouthNH.jpeg" alt="Portsmouth"></div>
+          <div class="about__me__text">
+            <p>I am based in Portsmouth, NH and began pursuing software development in November 2020 while maintaining
+              my full-time job as a pediatric physical therapist. I plan to continue to study and learn in my free time
+              to develop skills in front-end engineering.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section5" data-nav="Section 5" class="section">
+      <div class="landing__container">
+        <h2>Recent Projects</h2>
+        <div class="project_card">
+          <div class="project_photo">
+            <img src="images/screenshotResume.png" alt="screenshotResume">
+          </div>
+          <div class="project_content">
+            <h3>Résumé site</h3>
+            <p>You're lookin' at it! Built to display recent work and compile background information.</p>
+            <a href="github.com">GITHUB</a>
+          </div>
+        </div>
+        <div class="project_card">
+          <div class="project_photo">
+            <img src="images/screenshotBlog.jpg" alt="screenshotBlog">
+          </div>
+          <div class="project_content">
+            <h3>Blog site</h3>
+            <p>Blog page created for Udacity Project 1, created using custom HTML and CSS code.</p>
+            <a href="https://mskalisz.github.io/Udacity_PersonalBlogV2/index.html">GITHUB</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <a href="mailto:mskalisz3@gmail.com"><img src="images/logo_email.svg" alt="Email Me"></a>
+    <a href="https://github.com/mskalisz"><img src="images/logo_github.svg" alt="Github"></a>
+    <a href="https://www.linkedin.com/in/martha-kalisz-a250a4106/"><img src="images/logo_linkedin.svg"
+        alt="linkedin"></a>
+    <a href="https://www.instagram.com/mskalisz"><img src="images/logo_insta.svg" alt="instagram"></a>
+    <p>2020. Made for Udacity Project 2</p>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

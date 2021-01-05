@@ -1,0 +1,46 @@
+.experience_card {
+    display: inline-flex;
+    width: 80%;
+    margin-right: ;
+    margin-left: 5%;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: rgba(179, 217, 255, 1) 0px 1px 1px 0px, rgba(179, 217, 255, 1) 0px 2px 5px 0px;
+    background-color: #eef2f7;
+    padding: 30px;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: opacity 900ms ease-out 0s, transform 400ms ease-out 0s, visibility 900ms ease-out 0s;
+    will-change: opacity, transform, visibility;
+}
+
+.experience_content {
+    padding: 1em;
+}
+
+.experience_photo img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+    margin: 1em;
+    border: solid 1px #444444;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 2px 5px 0px;
+    border-radius: 15%;
+}
+
+.experience_content h3 {
+    color: #3982c6;
+}
+
+.experience_content p {
+    color: #444444;
+}
+
+@media screen and (max-width: 750px) {
+    .experience_card {
+        display: inline-flex;
+        flex-direction: column;
+    }
+}

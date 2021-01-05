@@ -1,0 +1,49 @@
+.about__me__content {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.about__me__content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__me__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__me__img0 {
+    height: 0px;
+}
+
+.about__me__text h3 {
+    margin-top: 2.5em;
+    justify-content: flex-end;
+}
+
+.about__me__text p {
+    padding-left: 3em;
+    padding-bottom: 1em;
+    justify-self: center;
+}
+
+.about__me__content h3 {
+    font-size: 1.5em;
+    color: #444444;
+    font-family: 'Raleway', sans-serif;
+    padding-top: 1em;
+    padding-bottom: 0em;
+}
+
+@media screen and (max-width: 750px) {
+    .about__me__content {
+        display: inline-flex;
+        flex-direction: column;
+    }
+}
