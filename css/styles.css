@@ -80,19 +80,16 @@ h1 {
 
 .main__hero a:link {
   color: rgb(179, 217, 255);
-  font-size: 1.2em;
   text-decoration: none;
 }
 
 .main__hero a:visited {
   color: rgb(179, 217, 255);
-  font-size: 1.2em;
   text-decoration: none;
 }
 
 .main__hero a:hover {
   color: #FFFAF0;
-  font-size: 1.2em;
   text-decoration: none;
 }
 
