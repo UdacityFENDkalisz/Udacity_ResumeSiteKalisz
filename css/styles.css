@@ -85,20 +85,16 @@ h1 {
 
 a:visited {
   color: rgb(179, 217, 255);
-  background-color: transparent;
+  font-size: 1.5em;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
-  background-color: transparent;
+  color: #FFFAF0;
+  font-size: 1.5em;
   text-decoration: underline;
 }
 
-a:active {
-  color: #FFFAF0;
-  text-decoration: underline;
-}
 
 @media only screen and (min-width: 35em) {
     h1 {
