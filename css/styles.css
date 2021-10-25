@@ -61,7 +61,7 @@ h1 {
     color: #FFFAF0
 }
 
-.main__hero h3 a {
+.main__hero h3 {
     font-size: 1.7em;
     font-weight: bolder;
     padding-top: 0em;
@@ -76,6 +76,28 @@ h1 {
 .main__hero h5 {
     padding-bottom: 10em;
     font-size: 1.2em;
+}
+
+.main__hero a:link {
+  color: rgb(179, 217, 255);
+  font-size: 1.5em;
+}
+
+a:visited {
+  color: rgb(179, 217, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #FFFAF0;
+  text-decoration: underline;
 }
 
 @media only screen and (min-width: 35em) {
