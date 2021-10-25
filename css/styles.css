@@ -61,7 +61,7 @@ h1 {
     color: #FFFAF0
 }
 
-.main__hero h3 {
+.main__hero h3 a {
     font-size: 1.7em;
     font-weight: bolder;
     padding-top: 0em;
