@@ -83,13 +83,13 @@ h1 {
   font-size: 1.5em;
 }
 
-a:visited {
+.main__hero a:visited {
   color: rgb(179, 217, 255);
   font-size: 1.5em;
   text-decoration: none;
 }
 
-a:hover {
+.main__hero a:hover {
   color: #FFFAF0;
   font-size: 1.5em;
   text-decoration: underline;
